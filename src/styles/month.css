@@ -1,0 +1,42 @@
+.month {
+    background: #373b44; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #4286f4,
+      #373b44
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #4286f4,
+      #373b44
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    position: fixed;
+    left: 8vw;  
+  }
+
+  .changeMonth {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+   
+    .month {
+      width: 95%;
+      margin: auto;
+      position: initial;
+      padding: 5px;
+    }
+    
+  }
+  
+  @media (max-width: 360px) {
+    .month {
+      width: 98%;
+    }
+  }

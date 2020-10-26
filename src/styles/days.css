@@ -1,0 +1,39 @@
+table {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  width: 95%;
+ 
+}
+
+td:hover {
+  background: rgba(200, 200, 200, 0.9);
+  cursor: pointer;
+}
+
+td::after {
+  content: "click para agregar un evento";
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid black;
+  display: none;
+  font-size: 15px;
+}
+
+td:hover::after {
+  display: block;
+  position: absolute;
+}
+.actualDay {
+  background: rgba(0, 0, 255, 0.6);
+  color: antiquewhite;
+}
+
+.eventDay {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+@media(max-width:767px){
+  table{
+    width: 100%;
+    
+  }
+}
